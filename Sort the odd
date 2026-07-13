@@ -1,0 +1,11 @@
+def sort_array(source_array):
+    result_array = []
+    for value in source_array:
+        if value % 2 != 0:
+            result_array.append(value)
+    result_array.sort()
+    for index, value in enumerate(source_array):
+        if value % 2 == 0:
+            result_array.insert(index, value)
+    return result_array
+# IKTC
