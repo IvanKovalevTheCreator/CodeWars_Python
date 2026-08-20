@@ -1,0 +1,18 @@
+def remove_smallest(numbers):
+    result = []
+    if len(numbers) != 0:
+        new_numbers = []
+        minimum = numbers[0]
+        for number in numbers:
+            if number < minimum:
+                minimum = number
+        removed = False
+
+        for number in numbers:
+            if number == minimum and not removed:
+                removed = True
+            else:
+                result.append(number)
+        return result
+    else: return result
+#IKTC        
