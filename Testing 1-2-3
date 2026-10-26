@@ -1,0 +1,7 @@
+def number(lines):
+    #your code here
+    result = []
+    for i, x in enumerate(lines):
+        result.append(f"{i+1}: {x}")
+    return result
+# IKTC
